@@ -1,56 +1,118 @@
+/* ===============================
+   Container
+================================ */
 .add-student-container {
-  max-width: 500px;
+  max-width: 520px;
   margin: 40px auto;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  background: #f9f9f9;
+  padding: 24px;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
+/* Title */
 .add-student-container h2 {
   text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  color: #0f172a;
   margin-bottom: 20px;
-  color: #007bff;
 }
 
+/* ===============================
+   Form
+================================ */
 .add-student-container form {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 18px;
 }
 
+.add-student-container form > div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* Labels */
 .add-student-container label {
-  font-weight: 500;
-  margin-bottom: 5px;
-  display: block;
-  color: #333;
+  font-size: 14px;
+  font-weight: 600;
+  color: #334155;
 }
 
+/* Inputs */
 .add-student-container input {
-  padding: 10px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s ease;
 }
 
+.add-student-container input:focus {
+  border-color: #2563eb;
+}
 
+/* Error messages */
+.add-student-container p {
+  color: #dc2626;
+  font-size: 13px;
+}
 
+/* Submit Button */
 .add-student-container button {
-  padding: 10px;
-  background: #007bff;
-  color: white;
+  margin-top: 10px;
+  padding: 14px;
+  border-radius: 10px;
   border: none;
-  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  color: #ffffff;
   cursor: pointer;
-  font-weight: 500;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .add-student-container button:hover {
-  background: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(37, 99, 235, 0.3);
 }
 
-.add-student-container p {
-  color: red;
-  font-size: 14px;
-  margin-top: 5px;
+/* ===============================
+   Tablet View
+================================ */
+@media (max-width: 768px) {
+  .add-student-container {
+    margin: 30px 16px;
+    padding: 20px;
+  }
+
+  .add-student-container h2 {
+    font-size: 22px;
+  }
+}
+
+/* ===============================
+   Mobile View
+================================ */
+@media (max-width: 480px) {
+  .add-student-container {
+    margin: 20px 12px;
+    padding: 18px;
+  }
+
+  .add-student-container h2 {
+    font-size: 20px;
+  }
+
+  .add-student-container input {
+    padding: 10px;
+  }
+
+  .add-student-container button {
+    padding: 12px;
+    font-size: 14px;
+  }
 }

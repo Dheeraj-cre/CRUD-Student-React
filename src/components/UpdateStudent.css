@@ -1,57 +1,73 @@
-/* Container */
+/* ===============================
+   Container
+================================ */
 .update-container {
-  max-width: 500px;
+  max-width: 520px;
   margin: 40px auto;
-  padding: 25px;
-  background: #f8fafc;
+  padding: 24px;
+  background: #ffffff;
   border-radius: 14px;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 /* Title */
 .update-title {
   text-align: center;
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 700;
   color: #0f172a;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 }
 
-/* Search section */
+/* ===============================
+   Search Box
+================================ */
 .search-box {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 }
 
 .search-box label {
   font-size: 14px;
+  font-weight: 600;
   color: #334155;
 }
 
 .search-box input {
   padding: 12px;
   border-radius: 8px;
-  border: 1px solid #cbd5f5;
+  border: 1px solid #cbd5e1;
+  font-size: 14px;
   outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.search-box input:focus {
+  border-color: #2563eb;
 }
 
 .search-box button {
   padding: 12px;
   border-radius: 8px;
   border: none;
-  font-weight: 600;
-  background: linear-gradient(135deg, #38bdf8, #6366f1);
-  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  color: #ffffff;
   cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .search-box button:hover {
-  opacity: 0.9;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(37, 99, 235, 0.3);
 }
 
-/* Update Form */
+/* ===============================
+   Update Form
+================================ */
 .update-form {
   display: flex;
   flex-direction: column;
@@ -66,42 +82,77 @@
 
 .form-group label {
   font-size: 14px;
+  font-weight: 600;
   color: #334155;
 }
 
 .form-group input {
   padding: 12px;
   border-radius: 8px;
-  border: 1px solid #cbd5f5;
+  border: 1px solid #cbd5e1;
+  font-size: 14px;
   outline: none;
+  transition: border-color 0.2s ease;
 }
 
 .form-group input:focus {
-  border-color: #6366f1;
+  border-color: #2563eb;
 }
 
-/* Update Button */
+/* Submit Button */
 .update-btn {
   margin-top: 10px;
   padding: 14px;
   border-radius: 10px;
   border: none;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 700;
   background: linear-gradient(135deg, #22c55e, #16a34a);
-  color: white;
+  color: #ffffff;
   cursor: pointer;
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .update-btn:hover {
   transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(34, 197, 94, 0.3);
 }
 
-/* Responsive */
-@media (max-width: 500px) {
+/* ===============================
+   Tablet View
+================================ */
+@media (max-width: 768px) {
   .update-container {
-    margin: 20px;
+    margin: 30px 16px;
     padding: 20px;
+  }
+
+  .update-title {
+    font-size: 22px;
+  }
+}
+
+/* ===============================
+   Mobile View
+================================ */
+@media (max-width: 480px) {
+  .update-container {
+    margin: 20px 12px;
+    padding: 18px;
+  }
+
+  .update-title {
+    font-size: 20px;
+  }
+
+  .search-box input,
+  .form-group input {
+    padding: 10px;
+  }
+
+  .search-box button,
+  .update-btn {
+    padding: 12px;
+    font-size: 14px;
   }
 }
