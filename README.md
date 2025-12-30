@@ -1,12 +1,52 @@
-# React + Vite
+Student Management System (React + Node + MongoDB)
+This is a full-stack Student Management application built to manage student records easily. The application allows users to add, view, update, and delete students, with all data stored securely in MongoDB.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project was created to practice real-world full-stack development, API integration, and responsive UI design.
+Live Project
+Frontend: (Vercel link will be added)
+Backend API: (Render link will be added)
+Technologies Used
+Frontend:
+- React (Vite)
+- React Router
+- React Hook Form
+- CSS (Fully Responsive)
 
-Currently, two official plugins are available:
+Backend:
+- Node.js
+- Express.js
+- MongoDB (Mongoose)
+- REST APIs
+Features
+- Add new students
+- View student list
+- Update student details
+- Delete students
+- Responsive design (Mobile, Tablet, Desktop)
+- MongoDB persistent storage
+Project Structure
+studentmanagement/
+ ├── backend/   (Server and API logic)
+ ├── src/       (React frontend)
+ └── README.docx
+API Endpoints
+GET    /api/students        - Fetch all students
+POST   /api/students        - Add a student
+PUT    /api/students/:id    - Update student
+DELETE /api/students/:id    - Delete student
+How to Run Locally
+1. Clone the repository from GitHub
+2. Install backend dependencies and start the server
+3. Install frontend dependencies and start the React app
+4. Configure environment variables for MongoDB and API URLs
+What I Learned
+- Frontend and backend integration using REST APIs
+- MongoDB database handling
+- Building responsive UI with CSS
+- Git and GitHub workflow
+About the Developer
+Dheeraj Srivastava
+Frontend / Full-Stack Developer
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+GitHub: https://github.com/Dheeraj-cre
+LinkedIn: https://www.linkedin.com/in/dheerajsri/
