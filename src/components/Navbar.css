@@ -1,0 +1,22 @@
+.Navbar {
+  background: #007bff;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.Navbar a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 8px 14px;
+  border-radius: 6px;
+}
+
+.Navbar a:hover {
+  background: white;
+  color: #007bff;
+}

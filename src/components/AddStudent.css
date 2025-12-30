@@ -1,0 +1,56 @@
+.add-student-container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #f9f9f9;
+}
+
+.add-student-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+.add-student-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.add-student-container label {
+  font-weight: 500;
+  margin-bottom: 5px;
+  display: block;
+  color: #333;
+}
+
+.add-student-container input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+
+
+.add-student-container button {
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.add-student-container button:hover {
+  background: #0056b3;
+}
+
+.add-student-container p {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
